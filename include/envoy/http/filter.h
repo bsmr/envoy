@@ -517,7 +517,7 @@ public:
  */
 class StreamEncoderFilter : public StreamFilterBase {
 public:
-  /*
+  /**
    * Called with 100-continue headers.
    *
    * This is not folded into encodeHeaders because most Envoy users and filters

@@ -69,7 +69,7 @@ public:
   MockTokenBucket();
   ~MockTokenBucket();
 
-  MOCK_METHOD1(consume, bool(uint64_t));
+  MOCK_METHOD2(consume, uint64_t(uint64_t tokens, bool allow_partial));
 };
 
 // Captures absl::string_view parameters into temp strings, for use
